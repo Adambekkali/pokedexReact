@@ -28,11 +28,8 @@ Accès aux détails de chaque Pokémon via une page dédiée.
 🌐 API publique PokéBuild
 
 🧰 Installation & Lancement
-bash
-Copier
-Modifier
 git clone https://github.com/adam-bekkali/test-cyberdian-pokemon.git
-cd pokedex
+cd pokedexReact
 npm install
 npm run dev
 ➡️ Accède ensuite à l'application sur :
