@@ -99,12 +99,11 @@ useEffect(() => {
           }}
         >
           <StyledBox> Nombre Pokémon : {filteredPokemons.length} </StyledBox>
-          <StyledBox> Nombre Pokémon <img src="https://static.wikia.nocookie.net/pokemongo/images/3/30/Fire.png" alt="" width="25" /> : {lengthByTypes("feu")}</StyledBox>
-          <StyledBox> Nombre Pokémon <img src="https://static.wikia.nocookie.net/pokemongo/images/2/2f/Electric.png" alt="" width="25" /> : {lengthByTypes("Électrik")} </StyledBox>
-          <StyledBox> Nombre Pokémon <img src="https://static.wikia.nocookie.net/pokemongo/images/9/9d/Water.png" alt="" width="25" /> : {lengthByTypes("Eau")} </StyledBox>
-          <StyledBox> Nombre Pokémon <img src="https://static.wikia.nocookie.net/pokemongo/images/0/0b/Rock.png" alt="" width="25" /> : {lengthByTypes("Roche")} </StyledBox>
-          <StyledBox> Nombre Pokémon <img src="https://static.wikia.nocookie.net/pokemongo/images/c/c5/Grass.png" alt="" width="25" /> : {lengthByTypes("Plante")} </StyledBox>
-          <StyledBox> Nombre Pokémon <img src="https://static.wikia.nocookie.net/pokemongo/images/2/2c/Fairy.png" alt="" width="25" /> : {lengthByTypes("Fée")} </StyledBox>
+          <StyledBox> Nombre Pokémon <img src="https://static.wikia.nocookie.net/pokemongo/images/3/30/Fire.png" alt="" width="25" />  {lengthByTypes("feu")}</StyledBox>
+          <StyledBox> Nombre Pokémon <img src="https://static.wikia.nocookie.net/pokemongo/images/2/2f/Electric.png" alt="" width="25" />  {lengthByTypes("Électrik")} </StyledBox>
+          <StyledBox> Nombre Pokémon <img src="https://static.wikia.nocookie.net/pokemongo/images/9/9d/Water.png" alt="" width="25" />  {lengthByTypes("Eau")} </StyledBox>
+          <StyledBox> Nombre Pokémon <img src="https://static.wikia.nocookie.net/pokemongo/images/0/0b/Rock.png" alt="" width="25" />  {lengthByTypes("Roche")} </StyledBox>
+          <StyledBox> Nombre Pokémon <img src="https://static.wikia.nocookie.net/pokemongo/images/c/c5/Grass.png" alt="" width="25" />  {lengthByTypes("Plante")} </StyledBox>
         </div>
     <Routes>
         <Route path="/pokemon/:id" element={<PokemonDetailsPage allPokemons={allPokemons} />} />
