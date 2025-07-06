@@ -1,69 +1,56 @@
-# React + TypeScript + Vite
+🧪 Pokédex React – Application Web
+Une application web développée avec React et TypeScript affichant des Pokémons issus d’une API publique. Elle propose un moteur de recherche avancé et une interface utilisateur intuitive.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Fonctionnalités
+✅ Affichage dynamique des Pokémons depuis l’API publique :
+https://pokebuildapi.fr/api/v1/pokemon
 
-Currently, two official plugins are available:
+✅ Moteur de recherche avancé avec une syntaxe personnalisée :
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+name contain "Pika"
 
-## Expanding the ESLint configuration
+type include "Feu"
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+id > 100
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+✅ Navigation fluide avec React Router :
+Accès aux détails de chaque Pokémon via une page dédiée.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+📦 Stack technique
+⚛️ React 18
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🟦 TypeScript
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🧭 React Router DOM
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+🎨 CSS inline / composants stylisés
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🌐 API publique PokéBuild
+
+🧰 Installation & Lancement
+bash
+Copier
+Modifier
+git clone https://github.com/adam-bekkali/test-cyberdian-pokemon.git
+cd pokedex
+npm install
+npm run dev
+➡️ Accède ensuite à l'application sur :
+http://localhost:5173
+
+🗂 Structure du projet
+src/
+├── components/      # Composants réutilisables (ex: StyledBox)
+├── pages/           # Pages principales (ex: PokemonDetails)
+├── types/           # Déclarations des types TypeScript
+├── utils/           # Fonctions utilitaires (parsing du moteur de recherche)
+├── App.tsx          # Routing principal de l'application
+└── main.tsx         # Point d’entrée de l’application React
+💬 Remarques
+Le projet est conçu pour être modulaire et facilement extensible.
+
+Le moteur de recherche est pensé pour permettre l’ajout de nouvelles règles avec simplicité.
+
+👨‍💻 Auteur
+Adam Bekkali
+GitHub – @adam-bekkali
